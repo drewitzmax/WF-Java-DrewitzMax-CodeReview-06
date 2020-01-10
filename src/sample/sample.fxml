@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="120.0">
+         <children>
+            <Label text="Teachers" />
+            <ListView fx:id="teacherList" onMouseClicked="#changeTeacher" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Label text="this teacher" />
+            <Label text="ID" />
+            <TextField fx:id="idField" />
+            <Label text="Name" />
+            <TextField fx:id="nameField" />
+            <Label text="Surname" />
+            <TextField fx:id="surnameField" />
+            <Label text="E-Mail" />
+            <TextField fx:id="emailField" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="120.0">
+         <children>
+            <Label text="teaches this classes" />
+            <ListView fx:id="classList" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
